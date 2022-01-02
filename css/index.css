@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0 !important;
+    background-color: #E5E5E5;
+    font-family: 'Roboto';
+}
+.dashboard__wrapper{
+    display: flex;
+    width: 100vw;
+    height: 100%;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.side__nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem;
+    width: 83px;
+    height: 100vh;
+    border-radius:  20px 0 0 0 !important;
+    border-right: 2px solid #E1E1E1;
+}
+.side__nav .side__nav--top{
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+.side__nav .side__nav--top--menu__item{
+    margin-top: 1.75rem;
+}
+
+.main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+.main__header{
+    display: flex;
+    height: 24px;
+    justify-content: space-between;
+}
+.main__header__left{
+    width: 20rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+}
+
+.search__text{
+    font-size: 15px;
+    color:#6C6C6C;
+}
+
+.main__header__right{
+    display: flex;
+}
+.header__cover{
+    width:50px;
+    height: 44px;
+    background-color: #F1F1F1;
+    margin-right: .75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.cover__image{
+    background-image: url('../images/profile.svg');
+}
+.learn__primary{
+    font-size: 36px;
+}
+.learn__secondary{
+    font-size: 18px;
+    color: #C4C4C4;
+    font-weight: bold;
+    margin-top: -3.5rem;
+}
+
+.courses{
+    display: flex;
+}
+
+.course__card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 229px;
+    border: 2px solid #6D089C;
+    margin-left: 5rem;
+}
+
+.course__btn{
+    padding: .5rem;
+    color:white;
+    background-color: #6D089C;
+}
+
+.course__card__content{
+    padding: 1rem;
+}
+
+.course__btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.features{
+    display: flex;
+    margin-left: 2rem;
+    margin-top: 3rem;
+}
+.feature__card{
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    margin-left: 3rem;
+    padding: 1rem;
+    width: 174px;
+    border:1px solid #7D7D7D;
+}

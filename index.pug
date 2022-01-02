@@ -1,0 +1,30 @@
+include includes/mixins/courseCard
+include includes/mixins/featureCard
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Bug Dashboard
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css")
+        link(rel="stylesheet", href="css/index.css")
+    body 
+        div(class="dashboard__wrapper")
+            include includes/sideNav
+            div(class="main")
+                include includes/mainTop
+                div(class="learn__section")
+                    h5(class="learn__primary")  Learn New Skills
+                    p(class="learn__secondary") One simple price , unlimited skills
+                div(class="courses")
+                    +courseCard("./images/html.svg", "Html" , "120 Videos")
+                    +courseCard("./images/css.svg", "Css" , "120 Videos")
+                    +courseCard("./images/js.svg", "Javascript" , "120 Videos")
+                    +courseCard("./images/ts.svg", "Typescript" , "120 Videos")
+                div(class="features")
+                    +featureCard("Courses", "./images/feature.svg")
+                    +featureCard("Courses", "./images/feature.svg")
+                    +featureCard("Courses", "./images/feature.svg")
+                    +featureCard("Courses", "./images/feature.svg")
+                    +featureCard("Courses", "./images/feature.svg")
